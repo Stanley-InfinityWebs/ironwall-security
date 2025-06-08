@@ -43,8 +43,8 @@ export const About = () => {
             
             <div className="relative">
               <img 
-                src="/lovable-uploads/09f03614-8236-405a-a1bb-9cd8f9a70fe1.png" 
-                alt="Security Personnel" 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80" 
+                alt="Security Operations Center with multiple monitors" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 bg-blue-600/10 rounded-lg"></div>

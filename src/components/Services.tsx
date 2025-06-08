@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, CheckCircle } from "lucide-react";
+import { Shield, CheckCircle, Camera, Users } from "lucide-react";
 
 export const Services = () => {
   const services = [
@@ -27,7 +27,7 @@ export const Services = () => {
     {
       title: "Event Security",
       description: "Ensuring safety of guests and staff at events.",
-      icon: Shield
+      icon: Users
     },
     {
       title: "Access Control",
@@ -37,7 +37,7 @@ export const Services = () => {
     {
       title: "CCTV Surveillance",
       description: "Real-time monitoring and recording using closed-circuit television systems.",
-      icon: CheckCircle
+      icon: Camera
     }
   ];
 
@@ -54,7 +54,8 @@ export const Services = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-blue-600">
                 <CardHeader>
@@ -72,6 +73,37 @@ export const Services = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Security Technology Showcase */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80" 
+                alt="Advanced Security Technology" 
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+              <div className="absolute inset-0 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                <div className="text-white text-center">
+                  <h3 className="text-2xl font-bold mb-2">Advanced Technology</h3>
+                  <p className="text-blue-100">State-of-the-art security systems</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+                alt="Professional Security Team" 
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+              <div className="absolute inset-0 bg-slate-900/20 rounded-lg flex items-center justify-center">
+                <div className="text-white text-center">
+                  <h3 className="text-2xl font-bold mb-2">Expert Team</h3>
+                  <p className="text-slate-100">Highly trained professionals</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

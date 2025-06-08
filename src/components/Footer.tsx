@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <img 
-              src="/lovable-uploads/09f03614-8236-405a-a1bb-9cd8f9a70fe1.png" 
+              src="/lovable-uploads/b93119b2-3fc9-46d9-93c1-7cc09bbcc494.png" 
               alt="Ironwall Security Services Limited Logo" 
               className="h-16 w-auto"
             />
