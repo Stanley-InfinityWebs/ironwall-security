@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 
 export const CallToAction = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
       <div className="container mx-auto px-4">
@@ -17,7 +24,7 @@ export const CallToAction = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              onClick={() => window.open('tel:+254715472078')}
+              onClick={() => window.open('tel:+254715472078', '_self')}
               className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold"
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -27,7 +34,7 @@ export const CallToAction = () => {
               variant="outline"
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={scrollToContact}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Get Quote

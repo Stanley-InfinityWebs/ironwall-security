@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Shield } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,10 @@ export const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
     setIsOpen(false);
   };
 
@@ -27,8 +30,14 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Shield className={`h-8 w-8 ${isScrolled ? 'text-blue-600' : 'text-white'}`} />
+          <div className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/b93119b2-3fc9-46d9-93c1-7cc09bbcc494.png" 
+              alt="Ironwall Security Services Limited Logo" 
+              className={`h-10 w-auto transition-all duration-300 ${
+                isScrolled ? 'filter-none' : 'filter brightness-0 invert'
+              }`}
+            />
             <span className={`font-bold text-lg ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
               Ironwall Security
             </span>
@@ -36,19 +45,25 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['home', 'about', 'mission', 'services', 'contact'].map((item) => (
+            {[
+              { id: 'home', label: 'Home' },
+              { id: 'about', label: 'About' },
+              { id: 'mission', label: 'Mission' },
+              { id: 'services', label: 'Services' },
+              { id: 'contact', label: 'Contact' }
+            ].map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className={`capitalize font-medium transition-colors hover:text-blue-600 ${
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`font-medium transition-colors hover:text-blue-600 ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
               >
-                {item}
+                {item.label}
               </button>
             ))}
             <Button 
-              onClick={() => window.open('tel:+254715472078')}
+              onClick={() => window.open('tel:+254715472078', '_self')}
               className="bg-blue-600 hover:bg-blue-700 text-white"
             >
               <Phone className="h-4 w-4 mr-2" />
@@ -69,18 +84,24 @@ export const Navigation = () => {
         {isOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="py-4 space-y-2">
-              {['home', 'about', 'mission', 'services', 'contact'].map((item) => (
+              {[
+                { id: 'home', label: 'Home' },
+                { id: 'about', label: 'About' },
+                { id: 'mission', label: 'Mission' },
+                { id: 'services', label: 'Services' },
+                { id: 'contact', label: 'Contact' }
+              ].map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 capitalize"
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
               <div className="px-4 pt-2">
                 <Button 
-                  onClick={() => window.open('tel:+254715472078')}
+                  onClick={() => window.open('tel:+254715472078', '_self')}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 >
                   <Phone className="h-4 w-4 mr-2" />

@@ -27,7 +27,7 @@ export const Contact = () => {
                 <p className="text-2xl font-bold text-white mb-2">+254 715 472 078</p>
                 <Button 
                   className="w-full bg-blue-600 hover:bg-blue-700"
-                  onClick={() => window.open('tel:+254715472078')}
+                  onClick={() => window.open('tel:+254715472078', '_self')}
                 >
                   Call Now
                 </Button>
@@ -46,7 +46,7 @@ export const Contact = () => {
                 <Button 
                   variant="outline" 
                   className="w-full border-slate-600 text-white hover:bg-slate-700"
-                  onClick={() => window.open('tel:+254734384539')}
+                  onClick={() => window.open('tel:+254734384539', '_self')}
                 >
                   Request Callback
                 </Button>
@@ -62,7 +62,7 @@ export const Contact = () => {
             <Button 
               size="lg" 
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4"
-              onClick={() => window.open('tel:+254715472078')}
+              onClick={() => window.open('tel:+254715472078', '_self')}
             >
               Emergency Contact
             </Button>

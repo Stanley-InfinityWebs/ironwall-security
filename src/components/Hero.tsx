@@ -4,11 +4,17 @@ import { Shield, Phone, ArrowDown } from "lucide-react";
 
 export const Hero = () => {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -21,7 +27,7 @@ export const Hero = () => {
             <img 
               src="/lovable-uploads/b93119b2-3fc9-46d9-93c1-7cc09bbcc494.png" 
               alt="Ironwall Security Services Limited Logo" 
-              className="h-32 w-auto drop-shadow-2xl"
+              className="h-36 w-auto drop-shadow-2xl filter brightness-110"
             />
           </div>
           
@@ -39,7 +45,7 @@ export const Hero = () => {
           <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <Shield className="h-5 w-5 text-blue-300" />
             <span className="text-lg font-semibold text-blue-200">
-              The Best Provider for Security Solutions in Kenya
+              The Best Provider for Security Solutions in Kenya | Established 2024
             </span>
           </div>
           
@@ -55,7 +61,7 @@ export const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              onClick={() => window.open('tel:+254715472078')}
+              onClick={() => window.open('tel:+254715472078', '_self')}
               className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-lg"
             >
               <Phone className="mr-2 h-5 w-5" />

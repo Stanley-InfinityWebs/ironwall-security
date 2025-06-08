@@ -10,13 +10,13 @@ export const Footer = () => {
             <img 
               src="/lovable-uploads/b93119b2-3fc9-46d9-93c1-7cc09bbcc494.png" 
               alt="Ironwall Security Services Limited Logo" 
-              className="h-16 w-auto"
+              className="h-20 w-auto filter brightness-110"
             />
           </div>
           
           <div className="border-t border-slate-800 pt-8">
             <p className="text-slate-400 mb-2">
-              &copy; {new Date().getFullYear()} Ironwall Security Services Limited
+              &copy; {new Date().getFullYear()} Ironwall Security Services Limited | Established 2024
             </p>
             <p className="text-blue-400 font-medium">
               Designed for safety, powered by integrity.
