@@ -42,7 +42,7 @@ export const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -57,7 +57,7 @@ export const Services = () => {
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-blue-600">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-blue-600 hover-lift">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <service.icon className="h-8 w-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
@@ -77,13 +77,13 @@ export const Services = () => {
 
           {/* Security Technology Showcase */}
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative">
+            <div className="relative group">
               <img 
                 src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80" 
                 alt="Advanced Security Technology" 
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
+                className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
-              <div className="absolute inset-0 bg-blue-600/20 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-blue-600/20 rounded-lg flex items-center justify-center group-hover:bg-blue-600/30 transition-colors duration-300">
                 <div className="text-white text-center">
                   <h3 className="text-2xl font-bold mb-2">Advanced Technology</h3>
                   <p className="text-blue-100">State-of-the-art security systems</p>
@@ -91,13 +91,13 @@ export const Services = () => {
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative group">
               <img 
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
                 alt="Professional Security Team" 
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
+                className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
-              <div className="absolute inset-0 bg-slate-900/20 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-slate-900/20 rounded-lg flex items-center justify-center group-hover:bg-slate-900/30 transition-colors duration-300">
                 <div className="text-white text-center">
                   <h3 className="text-2xl font-bold mb-2">Expert Team</h3>
                   <p className="text-slate-100">Highly trained professionals</p>
