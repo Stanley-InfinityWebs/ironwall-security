@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-white py-12">
+    <footer className="bg-slate-950 text-white py-10 md:py-12 font-inter animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
@@ -18,7 +18,7 @@ export const Footer = () => {
             <p className="text-slate-400 mb-2">
               &copy; {new Date().getFullYear()} Ironwall Security Services Limited | Established 2024
             </p>
-            <p className="text-blue-400 font-medium">
+            <p className="text-blue-400 font-medium font-playfair">
               Designed for safety, powered by integrity.
             </p>
           </div>

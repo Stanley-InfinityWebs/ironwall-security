@@ -11,13 +11,13 @@ export const CallToAction = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+    <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">
             Ready to Secure Your Property?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-blue-100 mb-8 font-inter">
             Don't wait until it's too late. Contact us today for a free security assessment and customized protection plan.
           </p>
           
@@ -25,7 +25,7 @@ export const CallToAction = () => {
             <Button 
               size="lg"
               onClick={() => window.open('tel:+254715472078', '_self')}
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold shadow-xl hover:scale-105 transition-all duration-200"
             >
               <Phone className="mr-2 h-5 w-5" />
               Call for Free Consultation
@@ -33,7 +33,7 @@ export const CallToAction = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold shadow"
               onClick={scrollToContact}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
@@ -41,7 +41,7 @@ export const CallToAction = () => {
             </Button>
           </div>
 
-          <div className="mt-8 p-6 bg-blue-700/30 rounded-lg">
+          <div className="mt-8 p-6 bg-blue-700/30 rounded-lg font-inter">
             <p className="text-blue-100 font-medium">
               ⚡ Emergency Response Available 24/7 | 🛡️ Licensed & Insured | 📞 Free Consultation
             </p>

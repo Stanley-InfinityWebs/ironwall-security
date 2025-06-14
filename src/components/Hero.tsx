@@ -18,7 +18,10 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen flex items-center">
+    <section
+      id="home"
+      className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen flex items-center pt-28 md:pt-0 animate-fade-in"
+    >
       <div className="absolute inset-0 bg-black/30"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -32,19 +35,19 @@ export const Hero = () => {
           </div>
           
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in font-playfair drop-shadow" style={{ animationDelay: '0.2s' }}>
             Reliable & Trusted Security Solutions in Kenya
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in font-inter" style={{ animationDelay: '0.4s' }}>
             We safeguard your people, property, and peace of mind with professional security services.
           </p>
           
           {/* Tagline */}
           <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <Shield className="h-5 w-5 text-blue-300" />
-            <span className="text-lg font-semibold text-blue-200">
+            <span className="text-lg font-semibold text-blue-200 font-inter">
               The Best Provider for Security Solutions in Kenya | Established 2024
             </span>
           </div>
@@ -54,7 +57,7 @@ export const Hero = () => {
             <Button 
               onClick={scrollToContact}
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-2xl shadow-blue-900/25"
             >
               Get a Free Consultation
             </Button>
@@ -90,3 +93,4 @@ export const Hero = () => {
     </section>
   );
 };
+

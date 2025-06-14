@@ -25,14 +25,14 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-slate-100">
+    <section className="py-24 md:py-28 bg-gradient-to-br from-blue-50 to-slate-100 animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground font-playfair">
               What Our Clients Say
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground font-inter">
               Trusted by businesses and individuals across Kenya
             </p>
           </div>
@@ -45,7 +45,7 @@ export const Testimonials = () => {
                     <Quote className="h-8 w-8 text-blue-600 mb-4" />
                   </div>
                   
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground mb-6 leading-relaxed font-inter">
                     "{testimonial.content}"
                   </p>
                   
@@ -56,8 +56,8 @@ export const Testimonials = () => {
                   </div>
                   
                   <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                    <p className="font-semibold text-foreground font-playfair">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground font-inter">{testimonial.company}</p>
                   </div>
                 </CardContent>
               </Card>

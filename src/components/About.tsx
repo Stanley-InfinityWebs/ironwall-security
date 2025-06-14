@@ -3,19 +3,19 @@ import { Shield, CheckCircle } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-24 md:py-28 bg-background animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <Shield className="h-12 w-12 text-blue-600" />
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground font-playfair">
             Who We Are
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="text-left space-y-6">
+            <div className="text-left space-y-6 font-inter">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Ironwall Security Services Ltd is a leading provider of comprehensive security solutions in Kenya with extensive experience in the industry.
               </p>

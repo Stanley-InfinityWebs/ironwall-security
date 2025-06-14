@@ -42,14 +42,14 @@ export const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-24 md:py-28 bg-background animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground font-playfair">
               Comprehensive Security Services
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground font-inter">
               Professional security solutions tailored to your specific needs
             </p>
           </div>
@@ -61,13 +61,13 @@ export const Services = () => {
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <service.icon className="h-8 w-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-                    <CardTitle className="text-lg group-hover:text-blue-600 transition-colors duration-300">
+                    <CardTitle className="text-lg group-hover:text-blue-600 transition-colors duration-300 font-playfair">
                       {service.title}
                     </CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
+                  <CardDescription className="text-muted-foreground leading-relaxed font-inter">
                     {service.description}
                   </CardDescription>
                 </CardContent>
@@ -85,8 +85,8 @@ export const Services = () => {
               />
               <div className="absolute inset-0 bg-blue-600/20 rounded-lg flex items-center justify-center group-hover:bg-blue-600/30 transition-colors duration-300">
                 <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold mb-2">Advanced Technology</h3>
-                  <p className="text-blue-100">State-of-the-art security systems</p>
+                  <h3 className="text-2xl font-bold mb-2 font-playfair">Advanced Technology</h3>
+                  <p className="text-blue-100 font-inter">State-of-the-art security systems</p>
                 </div>
               </div>
             </div>
@@ -99,8 +99,8 @@ export const Services = () => {
               />
               <div className="absolute inset-0 bg-slate-900/20 rounded-lg flex items-center justify-center group-hover:bg-slate-900/30 transition-colors duration-300">
                 <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold mb-2">Expert Team</h3>
-                  <p className="text-slate-100">Highly trained professionals</p>
+                  <h3 className="text-2xl font-bold mb-2 font-playfair">Expert Team</h3>
+                  <p className="text-slate-100 font-inter">Highly trained professionals</p>
                 </div>
               </div>
             </div>
