@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Shield, Phone, ArrowDown, Star } from "lucide-react";
 
@@ -111,7 +110,7 @@ export const Hero = () => {
             </div>
             <div className="flex items-center gap-2 text-blue-200">
               <Star className="h-5 w-5 fill-current" />
-              <span className="font-medium">5+ Years Experience</span>
+              <span className="font-medium">2+ Years Experience</span>
             </div>
           </div>
 

@@ -24,7 +24,7 @@ export const Statistics = () => {
     },
     {
       icon: Award,
-      number: "5+",
+      number: "2+",
       label: "Years Experience",
       description: "In security industry"
     }
