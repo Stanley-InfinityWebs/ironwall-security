@@ -8,25 +8,22 @@ export const Testimonials = () => {
       name: "Sarah Kimani",
       company: "Westlands Shopping Center",
       location: "Nairobi",
-      content: "Ironwall Security has been protecting our mall for over 2 years. Their professionalism and quick response time are unmatched. The peace of mind they provide is invaluable.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b932?auto=format&fit=crop&w=150&h=150&q=80"
+      content: "Ironwall Security has been protecting our mall for 8 months now. Their professionalism and quick response time are unmatched. The peace of mind they provide is invaluable.",
+      rating: 5
     },
     {
       name: "Michael Ochieng",
       company: "Private Residence",
       location: "Karen",
-      content: "The CCTV system they installed gives me complete peace of mind. The mobile patrols are always on time and very professional. Highly recommend their services.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80"
+      content: "The CCTV system they installed 6 months ago gives me complete peace of mind. The mobile patrols are always on time and very professional. Highly recommend their services.",
+      rating: 5
     },
     {
       name: "Grace Mwangi",
       company: "Office Complex",
       location: "CBD",
-      content: "Outstanding security consulting services. They assessed our vulnerabilities and provided comprehensive solutions that have significantly improved our security posture.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80"
+      content: "Outstanding security consulting services over the past 4 months. They assessed our vulnerabilities and provided comprehensive solutions that have significantly improved our security posture.",
+      rating: 5
     }
   ];
 
@@ -73,11 +70,9 @@ export const Testimonials = () => {
                   </div>
                   
                   <div className="flex items-center gap-4">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300"
-                    />
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                      {testimonial.name.split(' ').map(n => n[0]).join('')}
+                    </div>
                     <div>
                       <p className="font-bold text-foreground font-playfair text-lg">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground font-inter font-medium">{testimonial.company}</p>
@@ -108,7 +103,7 @@ export const Testimonials = () => {
               </div>
               <div className="text-left">
                 <p className="font-semibold text-slate-800 font-playfair">Excellent Rating</p>
-                <p className="text-sm text-slate-600">Based on 100+ reviews</p>
+                <p className="text-sm text-slate-600">Based on 50+ reviews</p>
               </div>
             </div>
           </div>
